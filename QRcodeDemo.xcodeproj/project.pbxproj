@@ -16,6 +16,12 @@
 		7C8AD3A8278E7C760046D4B9 /* QRcodeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AD3A7278E7C760046D4B9 /* QRcodeDemoTests.swift */; };
 		7C8AD3B2278E7C760046D4B9 /* QRcodeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AD3B1278E7C760046D4B9 /* QRcodeDemoUITests.swift */; };
 		7C8AD3B4278E7C760046D4B9 /* QRcodeDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AD3B3278E7C760046D4B9 /* QRcodeDemoUITestsLaunchTests.swift */; };
+		7C8AD3C2278E80F10046D4B9 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 7C8AD3C1278E80F10046D4B9 /* RxCocoa */; };
+		7C8AD3C4278E80F10046D4B9 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 7C8AD3C3278E80F10046D4B9 /* RxRelay */; };
+		7C8AD3C6278E80F10046D4B9 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7C8AD3C5278E80F10046D4B9 /* RxSwift */; };
+		7C8AD3CB278E815D0046D4B9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7C8AD3CA278E815D0046D4B9 /* SnapKit */; };
+		7C8AD3CD278E83760046D4B9 /* QRcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AD3CC278E83760046D4B9 /* QRcodeViewController.swift */; };
+		7C8AD3D0278E89DC0046D4B9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C8AD3CF278E89DB0046D4B9 /* XCTest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,8 @@
 		7C8AD3AD278E7C760046D4B9 /* QRcodeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRcodeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8AD3B1278E7C760046D4B9 /* QRcodeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRcodeDemoUITests.swift; sourceTree = "<group>"; };
 		7C8AD3B3278E7C760046D4B9 /* QRcodeDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRcodeDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7C8AD3CC278E83760046D4B9 /* QRcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRcodeViewController.swift; sourceTree = "<group>"; };
+		7C8AD3CF278E89DB0046D4B9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C8AD3D0278E89DC0046D4B9 /* XCTest.framework in Frameworks */,
+				7C8AD3C6278E80F10046D4B9 /* RxSwift in Frameworks */,
+				7C8AD3C4278E80F10046D4B9 /* RxRelay in Frameworks */,
+				7C8AD3C2278E80F10046D4B9 /* RxCocoa in Frameworks */,
+				7C8AD3CB278E815D0046D4B9 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +96,7 @@
 				7C8AD3A6278E7C760046D4B9 /* QRcodeDemoTests */,
 				7C8AD3B0278E7C760046D4B9 /* QRcodeDemoUITests */,
 				7C8AD38E278E7C710046D4B9 /* Products */,
+				7C8AD3CE278E89DA0046D4B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +120,7 @@
 				7C8AD399278E7C760046D4B9 /* Assets.xcassets */,
 				7C8AD39B278E7C760046D4B9 /* LaunchScreen.storyboard */,
 				7C8AD39E278E7C760046D4B9 /* Info.plist */,
+				7C8AD3CC278E83760046D4B9 /* QRcodeViewController.swift */,
 			);
 			path = QRcodeDemo;
 			sourceTree = "<group>";
@@ -127,6 +142,14 @@
 			path = QRcodeDemoUITests;
 			sourceTree = "<group>";
 		};
+		7C8AD3CE278E89DA0046D4B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C8AD3CF278E89DB0046D4B9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +166,12 @@
 			dependencies = (
 			);
 			name = QRcodeDemo;
+			packageProductDependencies = (
+				7C8AD3C1278E80F10046D4B9 /* RxCocoa */,
+				7C8AD3C3278E80F10046D4B9 /* RxRelay */,
+				7C8AD3C5278E80F10046D4B9 /* RxSwift */,
+				7C8AD3CA278E815D0046D4B9 /* SnapKit */,
+			);
 			productName = QRcodeDemo;
 			productReference = 7C8AD38D278E7C710046D4B9 /* QRcodeDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +244,10 @@
 				Base,
 			);
 			mainGroup = 7C8AD384278E7C710046D4B9;
+			packageReferences = (
+				7C8AD3C0278E80F00046D4B9 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				7C8AD3C9278E815D0046D4B9 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 7C8AD38E278E7C710046D4B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +293,7 @@
 			files = (
 				7C8AD395278E7C710046D4B9 /* ViewController.swift in Sources */,
 				7C8AD391278E7C710046D4B9 /* AppDelegate.swift in Sources */,
+				7C8AD3CD278E83760046D4B9 /* QRcodeViewController.swift in Sources */,
 				7C8AD393278E7C710046D4B9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,7 +401,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -456,7 +490,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -484,7 +518,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -604,6 +638,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C8AD3C0278E80F00046D4B9 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		7C8AD3C9278E815D0046D4B9 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C8AD3C1278E80F10046D4B9 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C8AD3C0278E80F00046D4B9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		7C8AD3C3278E80F10046D4B9 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C8AD3C0278E80F00046D4B9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		7C8AD3C5278E80F10046D4B9 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C8AD3C0278E80F00046D4B9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		7C8AD3CA278E815D0046D4B9 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C8AD3C9278E815D0046D4B9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7C8AD385278E7C710046D4B9 /* Project object */;
 }
